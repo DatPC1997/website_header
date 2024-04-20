@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="mt-20">  
+    <div id="wrapper" class="container max-w-screen-2xl mx-auto overflow-hidden">
+        <!-- part header  -->
+        <header id="header" class="max-w-screen-2xl mx-auto bg-white shadow-xl fixed top-0 left-0 right-0 z-30 container">
+            <nav class="navbar mx-3 sm:mx-8 max-w-screen-xl lg:mx-auto flex justify-between h-20 items-center">
+                <!-- menu mobile  -->
+                <div class="navbar-mobile lg:hidden">
+                    <label for="check-nav-mobile" class="menu-mobile-icon text-4xl lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    
+                    <input type="checkbox" id="check-nav-mobile" class="navbar-mobile hidden">
+                    
+                    <ul class="navbar-list-mobile w-[320px] bg-white z-20 lg:hidden sm:'320px' fixed top-0 left-0 bottom-0">
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Đối tượng khách hàng
+                            </a>
+                        </li>
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Quy trình
+                            </a>
+                        </li>
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Bảng giá
+                            </a>
+                        </li>
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Cảm nhận khách hàng
+                            </a>
+                        </li>
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Đội ngũ bác sĩ
+                            </a>
+                        </li>
+                        <li class="navbar-list-item">
+                            <a href="#" class="py-3 px-6 font-medium text-2xl block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4 after:w-full after:h-0.5">
+                                Hình ảnh & Video
+                            </a>
+                        </li>
+                        <label for="check-nav-mobile" class="navbar-close absolute top-0 right-0 py-3 px-6">
+                            <i class="fa-solid fa-xmark text-5xl"></i>
+                        </label>
+                    </ul>
+
+                    <label for="check-nav-mobile" class="overlay fixed z-10 top-0 right-0 bottom-0 left-0 hidden"></label>
+                </div>
+                <div class="navbar-logo">
+                    <a class="" href="">
+                        <img class="" src="./img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- menu pc  -->
+                <ul class="navbar-list flex sm:'320px' hidden lg:flex">
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Giới thiệu</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Đối tượng khách hàng</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Quy trình</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Bảng giá</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Cảm nhận khách hàng</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Đội ngũ bác sĩ</a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#" class="py-6 font-medium px-2 block hover:after:bg-sky-400 hover:text-sky-400 relative after:absolute after:top-full after:left-2/4  after:w-8 after:h-0.5">Hình ảnh & Video</a>
+                    </li>
+                </ul>
+
+                <div class="navbar-btn hidden sm:block">
+                    <a href="tel:19001806" class="shadow-lg shadow-orange-300 animate-bounce bg-gradient-to-b from-orange-300 to-orange-500 py-2 px-2.5 rounded-full text-white flex items-center justify-center" >
+                        <span class="bg-white mr-2 rounded-full flex items-center justify-center w-7 h-7">
+                            <i class="text-orange-400 fa-solid fa-phone-volume mt-0.5"></i>
+                        </span>
+                        <span class="">Gọi 1900 1806</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- part container  -->
+        
+            <!-- part service -->
+            <div class="service container px-3 lg:px-0">
+                <div class="static container">
+                    <div class="relative">
+                        <div class="service-infor pt-3 lg:pt-0 lg:absolute lg:top-[30%] lg:left-[9%] z-10 lg:w-6/12 lg:max-w-screen-xl lg:mx-auto">
+                            <h3 class="service-infor-heading text-3xl sm:text-5xl font-medium ">
+                                Dịch vụ Tiêm chủng Vắc-xin
+                                Bảo vệ bản thân, bảo vệ mọi người
+                            </h3>
+                            <p class="service-infor-text mt-3 lg:mt-10 text-xl lg:text-lg ">
+                                Vắc-xin ra đời được coi là một trong những thành tựu vĩ đại của nhân loại. 
+                                Nhờ có Vắc xin, hàng triệu người trên thế giới tránh được nguy cơ tử vong 
+                                và những di chứng, dị tật suốt đời do các bệnh truyền nhiễm như sởi, quai 
+                                bị, rubella, thủy đậu, uốn ván...
+                            </p>
+                            <div class="service-btn  mt-4 lg:mt-12 sm:flex">
+                                <a href="" class="uppercase lg:mr-6 sm:mr-4 sm:flex-1 lg:flex-none shadow-lg shadow-orange-300 hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 py-2 px-2.5 rounded-full text-white flex items-center justify-center">
+                                    <span class="mr-1 rounded-full flex items-center justify-center w-7 h-7">
+                                        <i class="ti-pencil-alt"></i>
+                                    </span>
+                                    <span class="">
+                                        Đăng ký tư vấn
+                                    </span>
+                                </a>
+                                <a href="" class="uppercase mt-3 sm:mt-0 shadow-lg sm:flex-1 lg:flex-none shadow-orange-300 py-2 px-2.5 rounded-full hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 text-white font-medium flex items-center justify-center">
+                                    <span class="">
+                                        Quy trình tiêm chủng
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="service-img lg:w-7/12 mt-6 order-1 lg:mt-0  bg-gradient-to-r from-cyan-500 to-blue-500 lg:relative lg:ml-auto lg:top-0 rounded-bl-[40%]">
+                                <span class="service-img-vaccin">
+                                    <img class="bg-[url(./img/service_vaccin.png)] bg-no-repeat pt-[70%] bg-contain pr-[100%] bg-right-bottom">
+                                </span>
+                                <div class="service-cent left-[18%] lg:left-[36%] rounded-lg absolute w-52 h-20 flex justify-center items-center bg-white right-[40%] top-[93%] shadow-lg">
+                                    <span class="service-cent-img float-left">
+                                        <img class="w-14 h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 p-2" src="./img/service_vector_vaccin.png" alt="">
+                                    </span>
+                                    <div class="flex-none ml-2">
+                                        <span class="cent block text-3xl font-medium text-sky-500">95%</span>
+                                        <span class="amuont">Hiệu quả, an toàn</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- part prevention -->
+            <div class="prevention mt-20 sm:mt-52 ">
+                <div class="container lg:flex max-w-screen-xl mx-auto">
+                    <div class="container relative bg-[url(img/bg-prevention.png)] bg-no-repeat bg-center pt-[100%] sm:pt-[80%] xl:pt-[48%] xl:w-7/12 ">
+                        <img class="absolute bottom-0 sm:left-[6%]" src="img/prevention-doctor.png" alt="">
+                        <div class="prevention-smile h-20 w-56 justify-center items-center absolute top-[90%] right-[24%] bg-white shadow-lg flex rounded-xl">
+                            <span class="covit-img">
+                                <span class="flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 p-2">
+                                    <img src="img/prevention-Vector-smile.png" alt="">
+                                </span>
+                            </span>
+                            <span class="covit-text ml-2">
+                                <span class="block text-3xl font-medium text-sky-500">100%</span>
+                                <span class="">Khách hàng hài lòng</span>
+                            </span>
+                        </div>
+                        <div class="prevention-smile hidden sm:flex h-20 w-56 justify-center items-center absolute right-[57%] top-[90%] lg:top-[50%]  xl:right-[70%] bg-white shadow-lg flex rounded-xl">
+                            <span class="smile-img">
+                                <img class="w-14 h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 p-2" src="img/preven-Vector-covit.png" alt="">
+                            </span>
+                            <span class="smile-text ml-2">
+                                <span class="cent block text-3xl font-medium text-sky-500">900+</span>
+                                <span>khách hàng đã tiêm</span>
+                            </span>
+                        </div>
+                        <span class="absolute top-0 lg:right-[100%] block bg-[url(img/prevention_box.png)] bg-no-repeat bg-center pt-[20%] sm:pt-[10%] pr-[20%] sm:pr-[10%]"></span>
+                    </div>
+                    <div class="w-full lg:w-5/12 mt-24 lg:ml-8 relative px-3 lg:px-0">
+                        <div class="hidden lg:block absolute bottom-[100%] left-[92%] bg-[url(img/prevention-donet.png)] bg-no-repeat bg-center pt-[30%] pr-[30%]"></div>
+                        <h4 class="benefit text-3xl font-medium pb-4 relative after:absolute after:left-0 after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                            Hiệu quả phòng bệnh tối ưu
+                            từ việc thực hiện Tiêm chủng Vắc-xin
+                        </h4>
+                        <p class="mt-8">
+                            Bệnh viện Đa khoa Phương Đông cung cấp dịch vụ tư 
+                            vấn và tiêm chủng vắc-xin dành cho cả trẻ em và 
+                            người lớn với nhiều gói tiêm đa dạng, chi phí hợp 
+                            lý, mang lại hiệu quả phòng bệnh tối ưu. Tiêm chủng 
+                            tạo cho con người nền tảng phát triển khỏe mạnh, không 
+                            dị tật, di chứng... góp phần thúc đẩy nguồn nhân lực 
+                            cho các quốc gia. Từ đó giảm chi phí chăm sóc y tế, tăng 
+                            năng suất lao động, góp phần quan trọng trong xóa đói giảm 
+                            nghèo và thúc đẩy phát triển kinh tế, xã hội.
+                            Tiêm chủng vắc-xin là biện pháp phòng bệnh an toàn, 
+                            hiệu quả, được áp dụng cho cả người lớn và trẻ em, đặc 
+                            biệt là người già, người có bệnh nền mạn tính (tim mạch, 
+                            tiểu đường, huyết áp...), người bị suy giảm miễn dịch… Để 
+                            được tiêm phòng đầy đủ các loại vắc xin cần thiết, các gia 
+                            đình nên lựa chọn những cơ sở y tế chuyên biệt về tiêm chủng, 
+                            có đầy đủ cơ sở vật chất, trang thiết bị y tế để được tư vấn và 
+                            tiêm vắc xin chất lượng, an toàn.</p>
+                        <a class="mt-8 uppercase flex items-center justify-center w-full sm:w-5/12 shadow-lg sm:flex-1 lg:flex-none shadow-orange-300 py-2 px-2.5 rounded-full hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 text-white font-medium " href="">
+                            <i class="ti-pencil-alt"></i>
+                           <span class="block ml-3">
+                                Đăng ký tư vấn
+                           </span> 
+                        </a>
+                    </div>
+                    <span class=""></span>
+                </div>
+            </div>
+
+            <!-- part select  -->
+            <div class="selcet max-w-screen-xl lg:mx-auto mx-3 mt-12">
+                <div class="select-effect text-center grid lg:grid-cols-3 lg:gap-6 grid-cols-2 gap-2">
+                    <div class="">
+                        <p class="flex justify-center">
+                            <img class="bg-[url(./img/select-doctor.png)] bg-center bg-no-repeat pr-[100%] pt-[80%] sm:pt-[50%] sm:pr-[100%] lg:pt-[30%] lg:pr-[30%] " alt="">
+                        </p>
+                        <h4 class="font-medium text-xl">Đội ngũ bác sĩ giàu y đức</h4>
+                        <span class="">
+                            Đội ngũ bác sĩ khám sàng lọc và tư vấn có trình 
+                            độ chuyên môn cao, giàu kinh nghiệm, tư vấn tận tình.
+                        </span>
+                    </div>
+                    <div class="">
+                        <p class="flex justify-center">
+                            <img class="bg-[url(./img/select-heart.png)] bg-center bg-no-repeat pr-[100%] pt-[80%] sm:pt-[50%] sm:pr-[100%] lg:pt-[30%] lg:pr-[30%]" alt="">
+                        </p>
+                        <h4 class="font-medium text-xl">Cảm giác thư thái, bình yên</h4>
+                        <span class="">
+                            Không gian bệnh viện theo mô hình khách sạn hiện đại, 
+                            khuôn viên rộng gần 10ha với hàng vạn cây xanh
+                        </span>
+                    </div>
+                    <div class="">
+                        <p class="flex justify-center">
+                            <img class="bg-[url(./img/select-medal.png)] bg-center bg-no-repeat pr-[100%] pt-[80%] sm:pt-[50%] sm:pr-[100%] lg:pt-[30%] lg:pr-[30%] " alt="">
+                        </p>
+                        <h4 class="font-medium text-xl">Chất lượng dịch vụ hàng đầu</h4>
+                        <span class="">
+                            Trang bị đầy đủ phương tiện y tế cùng ekip cấp 
+                            cứu luôn túc trực giúp theo dõi và xử trí kịp thời các trường hợp
+                        </span>
+                    </div>
+                    <div class="">
+                        <p class="flex justify-center">
+                            <img class="bg-[url(./img/select-sparge.png)] bg-center bg-no-repeat pr-[100%] pt-[80%] sm:pt-[50%] sm:pr-[100%] lg:pt-[30%] lg:pr-[30%] " alt="">
+                        </p>
+                        <h4 class="font-medium text-xl">Chi phí hợp lý, tiết kiệm</h4>
+                        <span class="">
+                            Xây dựng đa dạng gói tiêm với chi phí hợp lý, 
+                            hỗ trợ trả góp qua thẻ tín dụng 0% lãi suất khi mua trọn gói. 
+                        </span>
+                    </div>
+                    <div class="">
+                        <p class="flex justify-center">
+                            <img class="bg-[url(./img/select-time.png)] bg-center bg-no-repeat pr-[100%] pt-[80%] sm:pt-[50%] sm:pr-[100%] lg:pt-[30%] lg:pr-[30%] " alt="">
+                        </p>
+                        <h4 class="font-medium text-xl">Thủ tục đơn giản, nhanh gọn</h4>
+                        <span class="">
+                            Thủ tục đặt lịch dễ dàng, nhanh gọn, tư vấn tận 
+                            tình không mất nhiều thời gian của khách hàng.
+                        </span>
+                    </div>
+                    <div class="">
+                        <p class="flex justify-center">
+                            <img class="bg-[url(./img/select-like.png)] bg-center bg-no-repeat pr-[100%] pt-[80%] sm:pt-[50%] sm:pr-[100%] lg:pt-[30%] lg:pr-[30%] " alt="">
+                        </p>
+                        <h4 class="font-medium text-xl">Chăm sóc khách hàng sau tiêm</h4>
+                        <span class="">
+                            Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo 
+                            cập nhật vắc xin thường xuyên. 
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- part procedure  -->
+            <div class="procedure w-auto mx-3 sm:mx-4 lg:mx-8 mt-20 bg-gradient-to-r from-sky-400 to-sky-500 rounded-xl sm:rounded-[174px]">
+                <div class="relative">
+                    <span class="hidden sm:block absolute bottom-[84%] right-[8%] bg-[url(./img/procedure-springs.png)] bg-center pt-[18%] pr-[16%] lg:pt-[10%] lg:pr-[10%] bg-no-repeat"></span>
+                                    
+                    <h3 class="procedure-heading text-xl lg:text-2xl pt-14 font-medium pb-4 text-center text-white relative after:absolute after:bottom-0 after:left-[50%] after:border-2 after:rounded-3xl after:border-white after:border-solid after:w-20">
+                        Quy trình dịch vụ Tiêm chủng Vắc-xin tại Bệnh viện Phương Đông
+                    </h3>
+                    <div class="sm:grid grid-cols-5 gap-2 xl:gap-8 mx-12 lg:mx-28 py-16">
+
+                    <div class="relative my-6">
+                        <span class="hidden lg:block border-l-2 border-white border-dashed absolute right-0 top-[30%] origin-center rotate-[120deg] h-40"></span>
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">01</span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <h3 class="text-white text-center">Đăng ký thông tin</h3>
+                        <p class="text-white text-center text-sm mt-1">
+                            Khách hàng đăng ký thông tin tại quầy tiếp đón 
+                            Trung tâm Tư vấn & Tiêm chủng vắc-xin.
+                        </p>
+                    </div>
+
+                    <div class="hidden sm:block relative my-6">
+                        <span class="hidden lg:block border-l-2 border-white border-dashed absolute left-[111%] top-[26%] origin-center rotate-[54deg] h-40"></span>
+                        <p class="text-white text-center text-sm mt-1">
+                            Khách hàng được thăm khám và tư vấn kỹ trước 
+                            khi tiêm tại phòng khám với bác sĩ.
+                        </p>
+                        <h3 class="text-white text-center">Tư vấn & Thăm khám</h3>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">02</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="sm:hidden relative my-6">
+                        <span class="hidden lg:block border-l-2 border-white border-dashed absolute right-0 top-[30%] origin-center rotate-[120deg] h-40"></span>
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">02</span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <h3 class="text-white text-center">Tư vấn & Thăm khám</h3>
+                        <p class="text-white text-center text-sm mt-1">
+                            Khách hàng được thăm khám và tư vấn kỹ trước 
+                            khi tiêm tại phòng khám với bác sĩ.
+                        </p>
+                    </div>
+
+                    <div class="relative my-6">
+                        <span class="hidden lg:block border-l-2 border-white border-dashed absolute left-[106%] top-[20%] origin-center rotate-[120deg] h-40"></span>
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">03</span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <h3 class="text-white text-center">Thanh toán chi phí</h3>
+                        <p class="text-white text-center text-sm mt-1">
+                            Khách hàng thanh toán chi phí tiêm tại quầy 
+                            Lễ tân và nhận phiếu thanh toán.
+                        </p>
+                    </div>
+
+                    <div class="hidden sm:block relative my-6">
+                        <span class="hidden lg:block border-l-2 border-white border-dashed absolute left-[112%] top-[22%] origin-center rotate-[54deg] h-44"></span>
+                        <p class="text-white text-center text-sm mt-1">
+                            Cầm theo phiếu thanh toán tới tiêm Vắc-xin tại 
+                            phòng tiêm theo chỉ dẫn của nhân viên y tế.
+                        </p>
+                        <h3 class="text-white text-center">Thực hiện tiêm chủng</h3>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">04</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="sm:hidden relative my-6">
+                        <span class="hidden lg:block border-l-2 border-white border-dashed absolute left-[106%] top-[20%] origin-center rotate-[120deg] h-40"></span>
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">04</span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <h3 class="text-white text-center">Thực hiện tiêm chủng</h3>
+                        <p class="text-white text-center text-sm mt-1">
+                            Cầm theo phiếu thanh toán tới tiêm Vắc-xin tại 
+                            phòng tiêm theo chỉ dẫn của nhân viên y tế.
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <span class="border-2 border-full block mx-auto w-32 h-32 flex justify-center items-center rounded-full border-dashed border-white">
+                            <span class="bg-sky-500 block text-center w-28 h-28 flex justify-center items-center shadow-2xl rounded-full">
+                                <span class="py-4 bg-white h-24 w-24 rounded-full shadow-2xl">
+                                    <span class="block text-green-600">Bước</span> 
+                                    <span class="block text-3xl font-medium text-green-600">05</span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="block border-l-2 border-white border-dashed h-12 w-0.5 mx-auto"></span>
+                        <span class="block mx-auto bg-white w-3 h-3 rounded-full"></span>
+                        <h3 class="text-white text-center">Theo dõi sức khỏe</h3>
+                        <p class="text-white text-center text-sm mt-1">
+                            Theo dõi 30 phút sau tiêm, kiểm tra sức khỏe 
+                            trước khi ra về và hướng dẫn theo dõi tại nhà.
+                        </p>
+                    </div>
+                    </div>
+
+                    <span class="hidden sm:block absolute top-[86%] lg:top-[76%] left-[3%] bg-[url(./img/procedure-donte.png)] bg-center bg-no-repeat pt-[20%] pr-[18%] lg:pt-[12%] lg:pr-[10%]"></span>
+                </div>
+            </div>
+
+            <!-- part benefit  -->
+            <div class="benefit max-w-screen-xl mx-auto mt-10 sm:mt-20">
+                <div class="lg:flex mx-3 sm:mx-4">
+                    <div class="benefit-infor lg:w-6/12">
+                        <h3 class="benefit text-3xl font-medium pb-4 relative after:absolute after:left-0 after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">Quyền lợi của khách hàng</h3> 
+                        <div class="mt-7 flex">
+                            <span class="benefit-plus float-left mt-0.5 bg-green-600 p-1 h-5 block rounded-full">
+                                <img src="./img/benefit-plus.png" alt="">
+                            </span>
+                            <div class="ml-3">   
+                                <p class="font-medium mb-2">
+                                    Được khám bệnh, chữa bệnh và chăm 
+                                    sóc kịp thời, tận tình chu đáo
+                                </p>
+                                <span class="">
+                                    Được khám chữa bệnh bằng phương pháp 
+                                    an toàn, hiệu quả; phù hợp với tình trạng 
+                                    bệnh tật và nhu cầu của người bệnh.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex">
+                            <span class="benefit-plus float-left mt-0.5 bg-green-600 p-1 h-5 block rounded-full">
+                                <img src="./img/benefit-plus.png" alt="">
+                            </span>
+                            <div class="ml-3">   
+                                <h5 class="font-medium mb-2">
+                                    Được tôn trọng các giá trị và niềm tin cá nhân
+                                </h5>
+                                <span class="">
+                                    Được tôn trọng quyền riêng tư, các nhu cầu tình cảm, 
+                                    xã hội, văn hóa, tín ngưỡng. Được bảo mật các thông 
+                                    tin cá nhân và thông tin y tế.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex">
+                            <span class="benefit-plus float-left mt-0.5 bg-green-600 p-1 h-5 block rounded-full flex justify-center items-center">
+                                <img src="./img/benefit-plus.png" alt="">
+                            </span>
+                            <div class="ml-3">   
+                                <p class="font-medium mb-2">
+                                    Được bảo vệ an toàn
+                                </p>
+                                <span class="">
+                                    Được cung cấp dịch vụ y tế đảm bảo về chất lượng 
+                                    dịch vụ và an toàn người bệnh. Được bảo vệ khỏi những 
+                                    rủi ro, được hỗ trợ bảo quản tài sản.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex">
+                            <span class="benefit-plus float-left mt-0.5 bg-green-600 p-1 h-5 block rounded-full">
+                                <img src="./img/benefit-plus.png" alt="">
+                            </span>
+                            <div class="ml-3">   
+                                <p class="font-medium mb-2">
+                                    Được cung cấp thông tin
+                                </p>
+                                <span class="">
+                                    Được bác sĩ tư vấn, giải thích đầy đủ về tình trạng bệnh 
+                                    tật, hướng điều trị, khả năng thành công, phục hồi, hậu 
+                                    quả nếu không điều trị và những rủi ro có thể xảy ra.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <p class="font-medium mb-5">
+                                Quý khách vui lòng để lại số điện thoại, 
+                                chúng tôi sẽ liên hệ lại ngay!
+                            </p>
+                            <span class="relative block">
+                                <input type="number" class="w-full rounded-full bg-zinc-50 pl-5" placeholder="Nhập số điện thoại...">
+                                <a class="uppercase block sm:absolute top-[8%] right-2 mt-3 sm:mt-0 text-center sm:w-40 shadow-lg shadow-orange-300 hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 py-1 px-2.5 rounded-full text-white" href="">
+                                    <span class="">
+                                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                                    </span>
+                                    <span class="">Gửi thông tin</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-6/12">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./img/benefit-catagory.png" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./img/benefit-catagory.png" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./img/benefit-catagory.png" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./img/benefit-catagory.png" alt="">
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- part fell -->
+            <div class="fell lg:flex mt-20 sm:mt-44 relative mx-3 lg:mx-0">
+                <div class="fell-bg relative bg-gradient-to-r from-sky-400 to-sky-600 w-full h-52 lg:w-6/12 sm:h-[560px] rounded-tr-[50%] rounded-br-[12%]">
+                    <span class="absolute bottom-0 bg-[url(./img/fell-doctor.png)] bg-contain bg-center pr-[100%] pb-[90%]  bg-no-repeat ">
+                    </span>
+                    <span class="flex justify-center items-center bg-white rounded-lg w-14 h-14 shadow-fadeIn absolute right-[24%]">
+                        <img class="w-10" src="./img/fell-like.png" alt="">
+                    </span>
+
+                    <div class="flex items-center bg-white shadow-fadeIn rounded-xl absolute left-0 sm:left-[16%] top-[93%] w-72  sm:w-96 h-16 ">
+                        <span class="absolute left-[2%]">
+                            <img src="./img/fell-girl.png" alt="">
+                        </span>
+                        <span class="absolute left-[9%]">
+                            <img src="./img/fell-girl-1.png" alt="">
+                        </span>
+                        <span class="absolute left-[16%]">
+                            <img src="./img/fell-girl-2.png" alt="">
+                        </span>
+                        <span class="absolute hidden sm:block left-[23%]">
+                            <img src="./img/fell-girl-3.png" alt="">
+                        </span>
+                        <span class="absolute left-[32%] sm:left-[37%]">
+                            Trang, Huyền và 169 người khác thích điều này
+                        </span>
+                    </div>
+                </div>
+
+                <div class="w-full mt-16 lg:w-6/12 lg:ml-8">
+                    <span class="hidden lg:block absolute top-0 right-0 bg-[url(./img/fell-box.png)] bg-center bg-no-repeat pr-[14%] pt-[16%] lg:pr-[10%] lg:pt-[10%]"></span>
+                    <p class="text-4xl lg:text-3xl font-medium pb-4 relative after:absolute after:left-0 after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                        Cảm nhận của khách hàng sau <br> khi sử dụng dịch vụ
+                    </p>
+                    <span class="block mt-8 text-xl w-[94%]">
+                        Dưới đây là những chia sẻ từ khách hàng dành cho Bệnh viện 
+                        Đa khoa Phương Đông và tập thể điều dưỡng Khoa kiểm soát nhiễm 
+                        khuẩn đã tận tình chăm sóc, điều trị trong suốt thời gian qua.
+                    </span>
+
+                    <div class="swiper benefit-slider pb-3 mt-4 lg:mt-0 sticky lg:absolute w-full lg:w-[60%] left-[40%] top-[55%]">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide max-w-[100%] bg-white p-3 rounded-xl shadow-xl">
+                            <p class="pb-3">
+                                Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. 
+                                Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng 
+                                tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái 
+                                độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi 
+                                sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.
+                            </p>
+                            <div class=" flex itesm-center justify-between pt-3 border-t-2 border-gray-100">
+                                <span class="flex items-center">
+                                    <img src="./img/fell-people.png" alt="">
+                                    <span class="block ml-3">
+                                        <span class="block font-medium w-full">Nguyễn Quỳnh Trang</span>
+                                        <span class="block">Hà Nội</span>
+                                    </span>
+                                </span>
+                                <span class="flex items-center">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                </span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide bg-white p-3 rounded-xl shadow-xl">
+                            <p class="pb-3">
+                                Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. 
+                                Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng 
+                                tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái 
+                                độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi 
+                                sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.
+                            </p>
+                            <div class="flex itesm-center justify-between pt-3 border-t-2 border-gray-100">
+                                <p class="flex items-center">
+                                    <img src="./img/fell-people-1.png" alt="">
+                                    <span class="block ml-3">
+                                        <span class="block font-medium w-full">Nguyễn Quỳnh Trang</span>
+                                        <span class="block">Hà Nội</span>
+                                    </span>
+                                </p>
+                                <span class="flex items-center">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                </span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide bg-white p-3 rounded-xl shadow-xl">
+                            <p class="pb-3">
+                                Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. 
+                                Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng 
+                                tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái 
+                                độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi 
+                                sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.
+                            </p>
+                            <div class="flex itesm-center justify-between pt-3 border-t-2 border-gray-100">
+                                <p class="flex items-center">
+                                    <img src="./img/fell-people-2.png" alt="">
+                                    <span class="block ml-3">
+                                        <span class="block font-medium w-full">Nguyễn Quỳnh Trang</span>
+                                        <span class="block">Hà Nội</span>
+                                    </span>
+                                </p>
+                                <span class="flex items-center">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                </span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide bg-white p-3 rounded-xl shadow-xl">
+                            <p class="pb-3">
+                                Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. 
+                                Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng 
+                                tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái 
+                                độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi 
+                                sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.
+                            </p>
+                            <div class="flex itesm-center justify-between pt-3 border-t-2 border-gray-100">
+                                <p class="flex items-center">
+                                    <img src="./img/fell-people.png" alt="">
+                                    <span class="block ml-3">
+                                        <span class="block font-medium w-full">Nguyễn Quỳnh Trang</span>
+                                        <span class="block">Hà Nội</span>
+                                    </span>
+                                </p>
+                                <span class="flex items-center">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                </span>
+                            </div>
+                          </div>
+                          <div class="swiper-slide bg-white p-3 rounded-xl shadow-xl">
+                            <p class="pb-3">
+                                Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. 
+                                Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng 
+                                tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái 
+                                độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi 
+                                sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.
+                            </p>
+                            <div class="flex itesm-center justify-between pt-3 border-t-2 border-gray-100">
+                                <p class="flex items-center">
+                                    <img src="./img/fell-people-1.png" alt="">
+                                    <span class="block ml-3">
+                                        <span class="block font-medium w-full">Nguyễn Quỳnh Trang</span>
+                                        <span class="block">Hà Nội</span>
+                                    </span>
+                                </p>
+                                <span class="flex items-center">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                    <img class="sm:mx-1" src="./img/fell-star.png" alt="">
+                                </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- part note -->
+            <div class="container note xl:max-w-screen-2xl mt-24 relative px-3">
+                <p class="note-heading mb-4 lg:mb-10 text-4xl text-center lg:text-3xl font-medium pb-4 relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                    Những lưu ý cần thiết dành cho khách hàng
+                </p>
+
+                <div class="relative bg-[url(./img/note-map.png)] bg-center bg-no-repeat lg:pt-10 lg:flex ">
+                    <div class="lg:block lg:absolute w-full h-full">
+                        <span class="w-full sm:w-5/12 inline-block mt-3 lg:ml-0 sm:ml-10 lg:absolute left-[4%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-xs">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                        <span class="w-full sm:w-5/12 inline-block mt-3 lg:ml-0 sm:ml-10 lg:absolute top-[28%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-xs">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                        <span class="w-full sm:w-5/12 inline-block mt-3 lg:ml-0 sm:ml-10 lg:absolute top-[56%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-xs">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                        <span class="w-full sm:w-5/12 inline-block mt-3 lg:ml-0 sm:ml-10 lg:absolute top-[84%] lg:w-96 h-44 lg:h-28 left-[8%]  py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-xs">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                    </div>
+                        <img class="hidden xl:block absolute left-[31%] top-[22%]" src="./img/note-line.png" alt="">
+                        <img class="hidden xl:block absolute left-[27%] top-[48%] " src="./img/note-line-1.png" alt="">
+                        <img class="hidden xl:block absolute left-[27%] top-[70%]" src="./img/note-line-2.png" alt="">
+                        <img class="hidden xl:block absolute left-[35%] top-[92%]" src="./img/note-line-3.png" alt="">
+
+                        <span class="note-box-img mx-auto my-6 lg:m-0 left-0 lg:left-[38%] w-[80%] sm:w-[33%] lg:w-[26%] block relative border-2 border-sky-500 rounded-full border-dashed w-80 h-64 lg:h-96">
+                            <img class="absolute lg:right-[12%] lg:top-[-12%] z-10" src="./img/note-doctor.png" alt="">
+                            <span class="block absolute top-[6%] lg:top-[8%] left-[5%] lg:left-[12%] rounded-full bg-gradient-to-r from-sky-400 to-blue-600 w-[90%] lg:w-80 h-56 lg:h-80 "></span>
+                            <span class="block"></span>
+                        </span>
+
+                        <img class="hidden xl:block absolute left-[62%] top-[20%]" src="./img/note-line-4.png" alt="">
+                        <img class="hidden xl:block absolute left-[65%] top-[47%]" src="./img/note-line-5.png" alt="">
+                        <img class="hidden xl:block absolute left-[64%] top-[72%]" src="./img/note-line-6.png" alt="">
+                        <img class="hidden xl:block absolute left-[58%] top-[92%]" src="./img/note-line-7.png" alt="">
+                    <div class="lg:block lg:absolute w-full h-full">
+                        <span class="w-full sm:w-5/12 inline-block lg:absolute mt-3 sm:ml-10 lg:ml-0  right-[4%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-xs">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                        <span class="w-full sm:w-5/12 inline-block lg:absolute mt-3 sm:ml-10 lg:ml-0  right-0 top-[28%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-xs">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                        <span class="w-full sm:w-5/12 inline-block lg:absolute mt-3 sm:ml-10 lg:ml-0  right-0 top-[56%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-sm">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                        <span class="w-full sm:w-5/12 inline-block lg:absolute mt-3 sm:ml-10 lg:ml-0  right-[8%] top-[84%] lg:w-96 h-44 lg:h-28 py-2 px-1 rounded-2xl bg-white shadow-fadeIn">
+                            <a href="" class="font-medium block hover:text-sky-400">
+                                Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?
+                            </a>
+                            <span class="text-sm">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Sapien, nec morbi mauris, turpis fringilla 
+                                condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.
+                            </span>
+                        </span>
+                    </div>
+                    
+                </div>
+
+                <a class="uppercase mt-9 absolute top-[100%] text-center left-0 sm:left-[40%] xl:left-[42%] sm:w-48 right-0 sm:right-[44%] shadow-lg shadow-orange-300 hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 py-1 px-2.5 rounded-full text-white" href="">
+                    <i class="ti-pencil-alt"></i>
+                    <span class="">Đăng ký tư vấn</span>
+                </a>
+
+                
+            </div>
+
+            <!-- part special -->
+            <div class="mt-40 relative mx-3 lg:mx-0">
+                <p class="special-heading mb-4 lg:mb-10 text-4xl text-center lg:text-3xl font-medium pb-4 relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                    Dịch vụ của Bệnh viện Phương Đông có gì đặc biệt?
+                </p>
+
+                <div class="w-full max-w-screen-xl mx-auto">
+                    <span class="flex sm:w-6/12 items-center bg-slate-200 rounded-2xl p-3 shadow-lg">
+                        <span class="basis-2/12 lg:basis-1/12 h-10 sm:h-14 lg:h-12 rounded-full shadow-lg bg-gradient-to-r from-sky-400 to-sky-600 flex items-center justify-center">
+                            <img class="w-6 sm:w-8" src="./img/spencial-home.png" alt="">
+                        </span>
+                        <span class="block ml-3 basis-10/12">
+                            <span class="block font-medium">
+                                Tiêu chuẩn Bệnh viện 5 sao
+                            </span>
+                            <span class="">
+                                Bệnh viện Phương Đông được xây dựng theo 
+                                tiêu chuẩn 5 sao, đặt mục tiêu trở thành 
+                                nhà cung cấp hàng đầu các dịch vụ chăm sóc 
+                                y tế đạt đẳng cấp thế giới thu hút khách hàng 
+                                trong nước và khu vực châu Á.
+                            </span>
+                        </span>
+                    </span>
+                    <span class="flex sm:w-6/12 items-center mt-6 ml-0 lg:ml-28 bg-slate-200 rounded-2xl p-3 shadow-lg">
+                        <span class="basis-2/12 lg:basis-1/12 h-10 sm:h-14 lg:h-12 rounded-full shadow-lg bg-gradient-to-r from-sky-400 to-sky-600 flex items-center justify-center">
+                            <img class="w-6 sm:w-8" src="./img/spencial-location.png" alt="">
+                        </span>
+                        <span class="block basis-11/12 ml-3">
+                            <span class="block font-medium">
+                                Lợi thế địa lý của Phương Đông
+                            </span>
+                            <span class="">
+                                Bệnh viện Đa khoa Phương Đông được coi là 
+                                điểm sáng về y tế khu vực phía Tây Hà Nội, 
+                                là địa chỉ khám chữa bệnh tin cậy cho gần 
+                                180.000 cư dân có nhu cầu sử dụng dịch vụ 
+                                y tế chất lượng cao.
+                            </span>
+                        </span>
+                    </span>
+                    <span class="flex sm:w-6/12 items-center mt-6 bg-slate-200 rounded-2xl p-3 shadow-lg">
+                        <span class="basis-2/12 lg:basis-1/12 h-10 sm:h-14 lg:h-12 rounded-full shadow-lg bg-gradient-to-r from-sky-400 to-sky-600 flex items-center justify-center">
+                            <img class="w-6 sm:w-8" src="./img/spencial-doctor.png" alt="">
+                        </span>
+                        <span class="block basis-11/12 ml-3">
+                            <span class="block font-medium">
+                                Đội ngũ bác sĩ giàu kinh nghiệm, giàu tâm huyết
+                            </span>
+                            <span class="">
+                                Bệnh viện Đa khoa Phương Đông quy tụ đội ngũ 
+                                bác sĩ có trình độ chuyên môn cao, giàu kinh 
+                                nghiệm, có nhiều năm công tác và giữ vị trí 
+                                quan trọng tại các bệnh viện tuyến trung ương.
+                            </span>
+                        </span>
+                    </span>
+                    <span class="flex sm:w-6/12 items-center mt-6 ml-0 lg:ml-28 bg-slate-200 rounded-2xl p-3 shadow-lg">
+                        <span class="basis-2/12 lg:basis-1/12 h-10 sm:h-14 lg:h-12 rounded-full shadow-lg bg-gradient-to-r from-sky-400 to-sky-600 flex items-center justify-center">
+                            <img class="w-6 sm:w-8" src="./img/spencial-device.png" alt="">
+                        </span>
+                        <span class="block basis-11/12 ml-3">
+                            <span class="block font-medium">
+                                Trang thiết bị hiện đại
+                            </span>
+                            <span class="">
+                                Bệnh viện Đa khoa Phương Đông đầu tư đồng bộ về 
+                                cơ sở vật chất, trang thiết bị nhập khẩu từ các 
+                                thương hiệu hàng đầu thế giới như: Mỹ, Nhật Bản,... 
+                                đảm bảo các tiêu chí về hiệu quả, an toàn, tiết kiệm 
+                                thời gian, chính xác và thân thiện với môi trường.
+                            </span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="hidden sm:block lg:hidden absolute top-[12%] right-0 bg-[url(./img/spencial-bg-nurse.png)] bg-bottom bg-no-repeat bg-contain pt-[40%] pr-[47%] lg:pr-[40%]">
+                    <img class="absolute bottom-0" src="./img/spencial-nurse.png" alt="">
+                </div>
+                <div class="hidden sm:block absolute bottom-[12%] lg:bottom-0 right-0 bg-[url(./img/spencial-bg-nurse.png)] bg-bottom bg-no-repeat bg-contain pt-[40%] pr-[47%] lg:pr-[40%]">
+                    <img class="absolute bottom-0" src="./img/spencial-nurse.png" alt="">
+                </div>
+            </div>
+
+            <!-- part team doctor  -->
+            <div class="max-w-screen-xl lg:mx-auto mt-16 mx-3">
+                <p class="teamDoctor mb-4 lg:mb-10 text-4xl pb-4 text-center lg:text-3xl font-medium relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                    Đội ngũ bác sĩ giàu nhiệt huyết, tận tụy vì khách hàng
+                </p>
+
+                <div class="swiper doctor-slider pb-4">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">Nguyễn Trung Chính</p>
+                                <p class="text-green-600">PGS.TS. Bác sĩ Ung bướu</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">Nguyễn Trung Chính</p>
+                                <p class="text-green-600">PGS.TS. Bác sĩ Ung bướu</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor-1.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">Nguyễn Huy Bạo</p>
+                                <p class="text-green-600">TTND.TS.Bác sĩ CKII Sản phụ khoa</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">Nguyễn Huy Bạo</p>
+                                <p class="text-green-600">TTND.TS.Bác sĩ CKII Sản phụ khoa</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor-2.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">TRẦN KINH TRANG</p>
+                                <p class="text-green-600">Bác sĩ CKII Nhi khoa - Siêu âm tim</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">TRẦN KINH TRANG</p>
+                                <p class="text-green-600">Bác sĩ CKII Nhi khoa - Siêu âm tim</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor-3.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">NGUYỄN THỊ KIM YẾN</p>
+                                <p class="text-green-600">ThS. Dược sỹ</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">NGUYỄN THỊ KIM YẾN</p>
+                                <p class="text-green-600">ThS. Dược sỹ</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">Nguyễn Trung Chính</p>
+                                <p class="text-green-600">PGS.TS. Bác sĩ Ung bướu</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">Nguyễn Trung Chính</p>
+                                <p class="text-green-600">PGS.TS. Bác sĩ Ung bướu</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor-3.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">NGUYỄN THỊ KIM YẾN</p>
+                                <p class="text-green-600">ThS. Dược sỹ</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">NGUYỄN THỊ KIM YẾN</p>
+                                <p class="text-green-600">ThS. Dược sỹ</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+                    <div class="swiper-slide text-center shadow-lg rounded-lg">
+                        <span class="teamDoctor-list rounded-tr-xl rounded-tl-xl pt-[10%] pt-[10%] block bg-gray-100 relative">
+                            <img class="mx-auto" src="./img/teamDoctor.png" alt="">
+                            <span class="teamdoctor-info bg-white block rounded-br-xl rounded-bl-xl py-3">
+                                <p class="font-medium text-lg uppercase ">Nguyễn Trung Chính</p>
+                                <p class="text-green-600">PGS.TS. Bác sĩ Ung bướu</p>
+                            </span>
+
+                            <div class="info-teamdoctor bg-white rounded-br-xl rounded-bl-xl hidden absolute ">
+                                <p class="font-medium text-lg mt-3 uppercase">Nguyễn Trung Chính</p>
+                                <p class="text-green-600">PGS.TS. Bác sĩ Ung bướu</p>
+                                <span class="block mt-2 text-xs">
+                                    Với hơn 40 năm kinh nghiệm trong lĩnh 
+                                    vực Sản phụ khoa cùng nhiều nghiên cứu khoa 
+                                    học giá trị về sức khỏe sinh sản phụ nữ, 
+                                    TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc 
+                                    Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc 
+                                    cho hàng triệu thai phụ trong hành trình đón 
+                                    con yêu chào đời.
+                                </span>
+                                <span class="flex justify-center mt-3">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                    <img src="./img/fell-star.png" alt="">
+                                </span>
+                                <span class="block mt-1">4.8/5 (38 bình chọn)</span>
+                            </div>
+                        </span> 
+                    </div>
+
+                    </div>
+                    <div class="swiper-pagination relative pt-3"></div>
+                  </div>
+            </div>
+
+            <!-- part answer -->
+            <div class="answer mt-2 lg:mt-9 bg-[url(./img/bg-answer.png)] bg-center bg-no-repeat pt-auto">
+                <div class="answer-heading-text text-center pt-8 text-3xl pb-4 lg:text-3xl font-medium relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                    Thắc mắc của khách hàng khi sử dụng dịch vụ tại Bệnh viện Phương Đông
+                </div>
+                <div class="mt-4 lg:mt-10 sm:pb-10 mx-3 sm:mx-4">
+                    <div class="flex w-full flex-wrap shadow-fadeIn rounded-xl sm:shadow-none justify-center items-center mt-4 xl:mt-0">
+                        <div class="answer-people flex items-center xl:w-5/12 bg-white h-auto sm:h-60 p-4 rounded-xl relative xl:mr-16">
+                            <img class="hidden sm:block h-full rounded-xl" src="./img/answer-people.png" alt="">
+                            <span class="block ml-4">
+                                <span class="block font-medium mb-3">
+                                    Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?
+                                </span>
+                                <span class="block text-sm">
+                                    Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản 
+                                    và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh 
+                                    viện mình có xét nghiệm và tiêm phòng trước khi mang thai 
+                                    không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh 
+                                    hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao 
+                                    lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế 
+                                    nào ạ? Cảm ơn quý bệnh viện.
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="answer-dot hidden xl:block relative w-2 h-64 max-h-[100%] bg-white rounded-tl-full rounded-tr-full"></div>
+
+                        <div class="w-full sm:w-5/12 lg:ml-20 relative sm:left-[29%] lg:left-[25%] xl:left-0 xl:after:absolute after:w-20 after:h-0.5 after:bg-white after:right-[100%] after:top-[50%]">
+                            <div class="xl:w-6/12 h-16 bg-white flex items-center px-3 rounded-xl">
+                                <img class="h-[80%]" src="./img/answer-gril.png" alt="">
+                                <span class="block ml-3">
+                                    <span class="block font-medium">Nguyễn Minh Ánh</span>
+                                    <span class="block text-sm">Đã hỏi: Ngày 25/07/2022</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full flex-wrap shadow-fadeIn rounded-xl sm:shadow-none justify-center items-center mt-4 xl:mt-0">
+                        <div class="w-full sm:w-5/12 order-1 xl:order-none relative sm:left-[29%] xl:left-[15%] xl:after:absolute after:w-20 after:h-0.5 after:bg-white after:left-[50%] after:top-[50%]">
+                            <div class="xl:w-6/12 h-16 bg-white flex items-center px-3 rounded-xl">
+                                <img class="h-[80%] rounded-full" src="./img/answer-doctor.png" alt="">
+                                <span class="block ml-3">
+                                    <span class="block font-medium">Bác sĩ Nguyễn Huy Bạo</span>
+                                    <span class="block text-sm">Đã trả lời: Ngày 25/07/2022</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="answer-dot hidden xl:block relative w-2 h-72 max-h-[100%] bg-white"></div>
+
+                        <div class="answer-people-dortor xl:ml-4 flex items-center xl:w-5/12 bg-white p-2 rounded-xl relative xl:left-[3%]">
+                            <span class="block ml-4">
+                                <span class="block font-medium mb-3">
+                                    Cảm ơn quý khách đã đặt câu hỏi cho chuyên mục Hỏi đáp 
+                                    chuyên gia của Bệnh viện Đa khoa Phương Đông
+                                </span>
+                                <span class="block text-sm">
+                                    Bệnh viện Đa khoa Phương Đông hiện cung cấp 
+                                    đa dạng các dịch vụ xét nghiệm tổng quát và 
+                                    tiêm chủng chất lượng cao dành cho phụ nữ dự 
+                                    định mang thai với quy trình khoa học, an toàn, 
+                                    hiệu quả, thực hiện bởi đội ngũ cán bộ y tế giỏi 
+                                    chuyên môn, giàu kinh nghiệm cùng hệ thống máy móc hiện đại. 
+                                </span>
+                                <span class="block text-sm mt-3">
+                                    Nếu bạn từng mắc COVID-10 và đã khỏi, sau khi hết 
+                                    thời gian cách ly và xét nghiệm cho kết quả âm tính 
+                                    thì có thể tiêm các vắc-xin dành cho phụ nữ sắp mang 
+                                    thai. Tuy nhiên nếu còn cảm thấy mệt, chưa hồi phục 
+                                    sức khỏe hoặc trong gia đình còn người đang cách ly thì 
+                                    bạn nên trì hoãn đến khi cơ thể đảm bảo đủ sức khỏe và 
+                                    những người trong nhà đều đã âm tính mới nên tiêm ngừa vắc-xin. 
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full flex-wrap shadow-fadeIn rounded-xl sm:shadow-none justify-center items-center mt-4 xl:mt-0">
+                        <div class="answer-people sm:mt-4 lg:mt-0 flex items-center xl:w-5/12 bg-white h-auto sm:h-60 p-4 rounded-xl relative xl:mr-16">
+                            <img class="hidden sm:block h-full rounded-xl" src="./img/answer-people.png" alt="">
+                            <span class="block ml-4">
+                                <span class="block font-medium mb-3">
+                                    Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?
+                                </span>
+                                <span class="block text-sm">
+                                    Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản 
+                                    và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh 
+                                    viện mình có xét nghiệm và tiêm phòng trước khi mang thai 
+                                    không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh 
+                                    hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao 
+                                    lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế 
+                                    nào ạ? Cảm ơn quý bệnh viện.
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="answer-dot hidden xl:block relative w-2 h-64 max-h-[100%] bg-white"></div>
+
+                        <div class="w-full sm:w-5/12 xl:ml-20 relative sm:left-[29%] xl:left-0 xl:after:absolute after:w-20 after:h-0.5 after:bg-white after:right-[100%] after:top-[50%]">
+                            <div class="xl:w-6/12 h-16 bg-white flex items-center px-3 rounded-xl">
+                                <img class="h-[80%]" src="./img/answer-gril.png" alt="">
+                                <span class="block ml-3">
+                                    <span class="block font-medium">Nguyễn Minh Ánh</span>
+                                    <span class="block text-sm">Đã hỏi: Ngày 25/07/2022</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex w-full flex-wrap shadow-fadeIn rounded-xl sm:shadow-none justify-center items-center mt-4 xl:mt-0">
+                        <div class="w-full sm:w-5/12 order-1 xl:order-none relative left-0 sm:left-[29%] xl:left-[15%] xl:after:absolute after:w-20 after:h-0.5 after:bg-white after:left-[50%] after:top-[50%]">
+                            <div class="xl:w-6/12 h-16 bg-white flex items-center px-3 rounded-xl">
+                                <img class="h-[80%] rounded-full" src="./img/answer-doctor.png" alt="">
+                                <span class="block ml-3">
+                                    <span class="block font-medium">Bác sĩ Nguyễn Huy Bạo</span>
+                                    <span class="block text-sm">Đã trả lời: Ngày 25/07/2022</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="answer-dot hidden xl:block relative w-2 h-72 max-h-[100%] bg-white"></div>
+
+                        <div class="answer-people-dortor xl:ml-4 flex items-center xl:w-5/12 bg-white p-2 rounded-xl relative xl:left-[3%]">
+                            <span class="block ml-4">
+                                <span class="block font-medium mb-3">
+                                    Cảm ơn quý khách đã đặt câu hỏi cho chuyên mục Hỏi đáp 
+                                    chuyên gia của Bệnh viện Đa khoa Phương Đông
+                                </span>
+                                <span class="block text-sm">
+                                    Bệnh viện Đa khoa Phương Đông hiện cung cấp 
+                                    đa dạng các dịch vụ xét nghiệm tổng quát và 
+                                    tiêm chủng chất lượng cao dành cho phụ nữ dự 
+                                    định mang thai với quy trình khoa học, an toàn, 
+                                    hiệu quả, thực hiện bởi đội ngũ cán bộ y tế giỏi 
+                                    chuyên môn, giàu kinh nghiệm cùng hệ thống máy móc hiện đại. 
+                                </span>
+                                <span class="block text-sm mt-3">
+                                    Nếu bạn từng mắc COVID-10 và đã khỏi, sau khi hết 
+                                    thời gian cách ly và xét nghiệm cho kết quả âm tính 
+                                    thì có thể tiêm các vắc-xin dành cho phụ nữ sắp mang 
+                                    thai. Tuy nhiên nếu còn cảm thấy mệt, chưa hồi phục 
+                                    sức khỏe hoặc trong gia đình còn người đang cách ly thì 
+                                    bạn nên trì hoãn đến khi cơ thể đảm bảo đủ sức khỏe và 
+                                    những người trong nhà đều đã âm tính mới nên tiêm ngừa vắc-xin. 
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full flex-wrap shadow-fadeIn rounded-xl sm:shadow-none justify-center items-center mt-4 xl:mt-0">
+                        <div class="answer-people sm:mt-4 lg:mt-0 flex items-center xl:w-5/12 bg-white h-auto sm:h-60 p-4 rounded-xl relative xl:mr-16">
+                            <img class="hidden sm:block h-full rounded-xl" src="./img/answer-people.png" alt="">
+                            <span class="block ml-4">
+                                <span class="block font-medium mb-3">
+                                    Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?
+                                </span>
+                                <span class="block text-sm">
+                                    Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản 
+                                    và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh 
+                                    viện mình có xét nghiệm và tiêm phòng trước khi mang thai 
+                                    không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh 
+                                    hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao 
+                                    lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế 
+                                    nào ạ? Cảm ơn quý bệnh viện.
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="answer-dot hidden xl:block relative w-2 h-64 max-h-[100%] bg-white  "></div>
+
+                        <div class="w-full sm:w-5/12 xl:ml-20 relative sm:left-[29%] xl:left-0 xl:after:absolute after:w-20 after:h-0.5 after:bg-white after:right-[100%] after:top-[50%]">
+                            <div class="xl:w-6/12 h-16 bg-white flex items-center px-3 rounded-xl">
+                                <img class="h-[80%]" src="./img/answer-gril.png" alt="">
+                                <span class="block ml-3">
+                                    <span class="block font-medium">Nguyễn Minh Ánh</span>
+                                    <span class="block text-sm">Đã hỏi: Ngày 25/07/2022</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full flex-wrap shadow-fadeIn rounded-xl sm:shadow-none justify-center items-center mt-4 xl:mt-0">
+                        <div class="w-full sm:w-5/12 order-1 xl:order-none relative left-0 sm:left-[29%] xl:left-[15%] after:absolute after:w-20 after:h-0.5 after:bg-white after:left-[50%] after:top-[50%]">
+                            <div class="xl:w-6/12 h-16 bg-white flex items-center px-3 rounded-xl">
+                                <img class="h-[80%] rounded-full" src="./img/answer-doctor.png" alt="">
+                                <span class="block ml-3">
+                                    <span class="block font-medium">Bác sĩ Nguyễn Huy Bạo</span>
+                                    <span class="block text-sm">Đã trả lời: Ngày 25/07/2022</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="answer-dot hidden xl:block relative w-2 h-72 max-h-[100%] bg-white rounded-bl-full rounded-br-full"></div>
+
+                        <div class="answer-people-dortor xl:ml-4 flex items-center xl:w-5/12 bg-white p-2 rounded-xl relative xl:left-[3%]">
+                            <span class="block ml-4">
+                                <span class="block font-medium mb-3">
+                                    Cảm ơn quý khách đã đặt câu hỏi cho chuyên mục Hỏi đáp 
+                                    chuyên gia của Bệnh viện Đa khoa Phương Đông
+                                </span>
+                                <span class="block text-sm">
+                                    Bệnh viện Đa khoa Phương Đông hiện cung cấp 
+                                    đa dạng các dịch vụ xét nghiệm tổng quát và 
+                                    tiêm chủng chất lượng cao dành cho phụ nữ dự 
+                                    định mang thai với quy trình khoa học, an toàn, 
+                                    hiệu quả, thực hiện bởi đội ngũ cán bộ y tế giỏi 
+                                    chuyên môn, giàu kinh nghiệm cùng hệ thống máy móc hiện đại. 
+                                </span>
+                                <span class="block text-sm mt-3">
+                                    Nếu bạn từng mắc COVID-10 và đã khỏi, sau khi hết 
+                                    thời gian cách ly và xét nghiệm cho kết quả âm tính 
+                                    thì có thể tiêm các vắc-xin dành cho phụ nữ sắp mang 
+                                    thai. Tuy nhiên nếu còn cảm thấy mệt, chưa hồi phục 
+                                    sức khỏe hoặc trong gia đình còn người đang cách ly thì 
+                                    bạn nên trì hoãn đến khi cơ thể đảm bảo đủ sức khỏe và 
+                                    những người trong nhà đều đã âm tính mới nên tiêm ngừa vắc-xin. 
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- part vaccin image -->
+            <div class="vaccin-img lg:max-w-screen-xl mx-3 sm:mx-4 lg:mx-auto lg:mt-8">
+                <h4 class="vaccin-img-text text-center pt-8 text-3xl pb-4 lg:text-3xl font-medium relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                    Hình ảnh khách hàng khi sử dụng gói dịch vụ Tiêm chủng Vắc-xin
+                </h4>
+
+                <div class="swiper vaccin mt-6 ">
+                    <div class="swiper-wrapper mb-4">
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-1.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-2.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-3.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-4.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-5.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-6.png"/>
+                      </div>
+                      <div class="swiper-slide rounded-3xl h-auto lg:h-[524px]">
+                        <img class="w-full h-full rounded-3xl mx-auto object-cover" src="img/vaccin-img-7.png"/>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <div thumbsSlider="" class="swiper imgVaccin">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28" src="./img/vaccin-img.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-1.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-2.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-3.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-4.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-5.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-6.png"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl h-28 " src="./img/vaccin-img-7.png"/>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- part video customer -->
+            <div class="video-customer mt-6 relative h-60 lg:mt-8 bg-[url(./img/bg-video-customen.png)] bg-center bg-no-repeat">
+                <h4 class="video-customer-heading text-center mb-7 pt-8 text-3xl pb-4 lg:text-3xl font-medium relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:bg-white after:w-24">
+                    Video khách hàng thăm khám tại Bệnh viện Phương Đông
+                </h4>
+
+                <div class="swiper customer lg:max-w-screen-xl mx-3 sm:mx-4 lg:mx-auto pb-3 relative">
+                    <div class="swiper-wrapper mb-3">
+                      <div class="swiper-slide">
+                        <iframe class="w-full h-56 rounded-xl" src="https://www.youtube.com/embed/phEcEkaUWLk&list=RDEMZQ4lAX7OshLWjXfrWbn6yA&start_radio=1" frameborder="0"></iframe>
+                        <div class="bg-white text-center px-3 py-2 shadow-fadeIn rounded-xl w-[90%] mt-[-32px] relative z-10 mx-auto">
+                            <p class="font-medium">
+                                Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin
+                            </p>
+                            <span class="inline-flex items-center text-gray-500 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="block ml-2">22/07/2022</span>
+                            </span>
+                            <span class="inline-flex items-center ml-4 text-gray-500 text-sm">
+                                <i class="ti-eye"></i>
+                                <span class="block ml-2">149 người đã xem</span> 
+                            </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <iframe class="w-full h-56 rounded-xl" src="https://www.youtube.com/embed/ObEOK7HSq2E" frameborder="0"></iframe>
+                        <div class="bg-white text-center px-3 py-2 shadow-fadeIn rounded-xl w-[90%] mt-[-32px] relative z-10 mx-auto">
+                            <p class="font-medium">
+                                Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin
+                            </p>
+                            <span class="inline-flex items-center text-gray-500 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="block ml-2">22/07/2022</span>
+                            </span>
+                            <span class="inline-flex items-center ml-4 text-gray-500 text-sm">
+                                <i class="ti-eye"></i>
+                                <span class="block ml-2">149 người đã xem</span> 
+                            </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <iframe class="w-full h-56 rounded-xl" src="https://www.youtube.com/embed/NvjNJA-W4-g" frameborder="0"></iframe>
+                        <div class="bg-white text-center px-3 py-2 shadow-fadeIn rounded-xl w-[90%] mt-[-32px] relative z-10 mx-auto">
+                            <p class="font-medium">
+                                Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin
+                            </p>
+                            <span class="inline-flex items-center text-gray-500 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="block ml-2">22/07/2022</span>
+                            </span>
+                            <span class="inline-flex items-center ml-4 text-gray-500 text-sm">
+                                <i class="ti-eye"></i>
+                                <span class="block ml-2">149 người đã xem</span> 
+                            </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <iframe class="w-full h-56 rounded-xl" src="https://www.youtube.com/embed/kn34BvZDLxg" frameborder="0"></iframe>
+                        <div class="bg-white text-center px-3 py-2 shadow-fadeIn rounded-xl w-[90%] mt-[-32px] relative z-10 mx-auto">
+                            <p class="font-medium">
+                                Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin
+                            </p>
+                            <span class="inline-flex items-center text-gray-500 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="block ml-2">22/07/2022</span>
+                            </span>
+                            <span class="inline-flex items-center ml-4 text-gray-500 text-sm">
+                                <i class="ti-eye"></i>
+                                <span class="block ml-2">149 người đã xem</span> 
+                            </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <iframe class="w-full h-56 rounded-xl" src="https://www.youtube.com/embed/Vjrnoh4crhU" frameborder="0"></iframe>
+                        <div class="bg-white text-center px-3 py-2 shadow-fadeIn rounded-xl w-[90%] mt-[-32px] relative z-10 mx-auto">
+                            <p class="font-medium">
+                                Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin
+                            </p>
+                            <span class="inline-flex items-center text-gray-500 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="block ml-2">22/07/2022</span>
+                            </span>
+                            <span class="inline-flex items-center ml-4 text-gray-500 text-sm">
+                                <i class="ti-eye"></i>
+                                <span class="block ml-2">149 người đã xem</span> 
+                            </span>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <iframe class="w-full h-56 rounded-xl" src="https://www.youtube.com/embed/g0E8EJc-7JM" frameborder="0"></iframe>
+                        <div class="bg-white text-center px-3 py-2 shadow-fadeIn rounded-xl w-[90%] mt-[-32px] relative z-10 mx-auto">
+                            <p class="font-medium">
+                                Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin
+                            </p>
+                            <span class="inline-flex items-center text-gray-500 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="block ml-2">22/07/2022</span>
+                            </span>
+                            <span class="inline-flex items-center ml-4 text-gray-500 text-sm">
+                                <i class="ti-eye"></i>
+                                <span class="block ml-2">149 người đã xem</span> 
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="next-customer hidden lg:flex text-white absolute top-[90%] left-[94%] w-8 h-8 rounded-full bg-gradient-to-r flex justify-center items-center from-sky-400 to-sky-600">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="prev-customer hidden lg:flex text-white absolute top-[90%] right-[94%] w-8 h-8 rounded-full bg-gradient-to-r flex justify-center items-center from-sky-400 to-sky-600">
+                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                </div>
+            </div>
+            <!-- part advise -->
+            <div class=" advise mt-64 sm:mt-52 max-w-screen-lg mx-auto relative">
+                <span class="hidden xl:block bg-[url(img/advise-box.png)] bg-no-repeat bg-center bg-contain pt-[10%] pr-[10%] absolute bottom-[90%] left-[100%]"></span>
+                <span class="bg-[url(img/advise-donet.png)] bg-no-repeat bg-center pt-[20%] pr-[20%] absolute top-[30%] right-[100%]"></span>
+                <h4 class="advise-heading text-center pt-8 text-3xl pb-4 lg:text-3xl font-medium relative after:absolute after:left-[50%] after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">
+                    Chương trình ưu đãi đặc biệt dành cho gói Tư vấn & Tiêm chủng Vắc-xin
+                </h4>
+                <div class="swiper slider-advise mt-6 px-3 lg:px-0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-organ.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-organ-1.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-family.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-organ.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-family.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-organ.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-center p-2 bg-slate-100 rounded-2xl ">
+                            <img class="mx-auto" src="img/advise-organ-1.png" alt="">
+                            <h6 class="text-sky-500 font-medium text-lg mt-4">Ưu đãi Tiêm chủng gói Cơ quan</h6>
+                            <span class="block mt-1">
+                                <p class="text-4xl font-medium text-sky-500">999k</p>
+                                <p class="text-sm text-gray-500">(Giá cũ: 1999k)</p>
+                            </span>
+                            <span class="block mt-4">
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                                <span class="block mb-2">
+                                    <i class="text-sky-600 fa-sharp fa-regular fa-circle-check"></i>
+                                    <span class="text-xs">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                </span>
+                            </span>
+                            <a class="block bg-gradient-to-r hover:opacity-80 from-sky-400 to-sky-500 w-[50%] mx-auto py-2 rounded-xl text-white uppercase font-medium" href="">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="hidden lg:flex next-advise absolute left-[102%] top-[50%] w-8 h-8 rounded-full bg-gradient-to-r from-sky-400 to-sky-600 text-white flex justify-center items-center">
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="hidden lg:flex prev-advise absolute right-[102%] top-[50%] w-8 h-8 rounded-full bg-gradient-to-r from-sky-400 to-sky-600 text-white flex justify-center items-center">
+                        <i class="fa-sharp fa-solid fa-arrow-left"></i> 
+                    </div>
+            </div>  
+            
+            <!-- part phuongdong note  -->
+            <div class="phuongdong-note mt-6 xl:mt-20 rounded-tl-3xl rounded-tr-3xl bg-[url(img/bg-phuongdong-note.png)] bg-no-repeat bg-center pt-[12%] sm:pt-[80%] lg:pt-[50%] xl:pt-[40%] relative ">
+                <img class="hidden xl:block bg-[url(img/Spring-note.png)] bg-center bg-no-repeat pt-[10%] pr-[10%] sm:absolute bottom-[86%] right-[4%]" src="" alt="">
+                <div class="bg-phuongdong-note sm:absolute bottom-0 xl:bottom-[6%] left-[50%] w-full sm:w-11/12 lg:w-5/6 bg-white rounded-tl-3xl rounded-tr-3xl px-3 sm:px-8 pt-8 pb-6">
+                    <div class="w-full xl:w-8/12">
+                        <h5 class="text-3xl font-medium">
+                            9 mũi vắc xin ngoài chương trình tiêm chủng mở rộng cha mẹ không nên bỏ qua
+                        </h5>
+                        <span class="mt-4 flex item-center">
+                            <span class="text-zinc-400">
+                                <span class="">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                <span class="ml-1">22/07/2022</span> 
+                            </span>
+                            <span class="ml-4 text-zinc-400">
+                                <span class="">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </span>
+                                <span class="ml-1">Admin</span>
+                            </span>
+                        </span>
+                        <p class="mt-6">
+                            <span class="text-sm block text-justify ">
+                                Theo khuyến cáo của bác sĩ nhi khoa, để giúp 
+                                trẻ có được hệ miễn dịch tốt nhất, tránh khỏi 
+                                các bệnh truyền nhiễm nguy hiểm, ngoài việc tiêm 
+                                đầy đủ vắc xin trong chương trình tiêm chủng mở rộng, 
+                                cha mẹ nên lưu ý cho bé tiêm thêm một số mũi quan trọng 
+                                khác phòng các bệnh như thủy đậu, viêm gan A...Tham khảo 
+                                ngay 9 mũi tiêm quan trọng cho trẻ trong bài viết dưới đây:
+                            </span>
+                            <span class="text-sm block mt-2 text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Pellentesque vitae vitae ut erat laoreet sit elit. Lorem 
+                                ridiculus suscipit ipsum quis in fames ultricies nec quis. 
+                                Semper nulla adipiscing leo mauris, sed. Eu cras mattis posuere 
+                                imperdiet id mauris egestas. Ante ipsum nisi, diam quis neque, 
+                                nunc tortor faucibus. Ullamcorper commodo velit ut ipsum dictum 
+                                platea ullamcorper vitae neque. Potenti amet lacus nisi massa 
+                                malesuada etiam mauris vivamus. Lacus amet, at mauris scelerisque. 
+                                Donec amet ultrices libero, congue. In sapien, viverra sed aenean 
+                                tristique eget. Porttitor libero dapibus integer tempus, fames diam. 
+                                Elit lectus eget laoreet enim, diam. Dapibus et ultrices dolor, 
+                                mauris neque augue faucibus a mauris.
+                            </span>
+                            <span class="text-sm block mt-2 text-justfy">
+                                Ullamcorper commodo velit ut ipsum dictum platea ullamcorper vitae 
+                                neque. Potenti amet lacus nisi massa malesuada etiam mauris vivamus. 
+                                Lacus amet, at mauris scelerisque. Donec amet ultrices libero, congue.
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="note-social flex items-center absolute bottom-full left-[50%] w-11/12 bg-zinc-100 py-2 px-8 rounded-tl-2xl rounded-tr-2xl">
+                        <a class="block mr-6 text-gray-500" href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="block mr-6 text-gray-500" href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="block mr-6 text-gray-500" href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a class="block mr-6 text-gray-500" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <img class="hidden xl:block bg-[url(img/note-doctor-1.png)] bg-no-repeat bg-center bg-contain bg-bottom pt-[36%] pr-[40%]  absolute bottom-0 right-0 " alt="">
+                <div class="bg-[url(img/bg-note-unter.png)] bg-no-repeat bg-center pr-[100%] pt-[10%] absolute bottom-0 rounded-tr-xl shadow-xl">
+                    <img class="hidden lg:block img-logo-note absolute right-[1%] bottom-[50%] w-[20%] " src="img/note-logo.png" alt="">
+                </div>
+            </div>
+
+            <!-- part register  -->
+            <div id="register" class="lg:flex sm:mt-6 lg:mt-0">
+                <div class="relative lg:w-6/12 bg-[url(img/register-vaccin.png)] bg-center bg-no-repeat bg-contain pt-[34%] pr-full">
+                    <div class="reginter-note absolute top-[20%] left-[50%] bg-[url(img/register-note.png)] bg-center bg-contain bg-no-repeat pt-[8%] pr-[80%]"></div>
+                </div>
+                <div class="lg:w-6/12 h-[486px] bg-neutral-100 relative lg:mt-4 flex justify-center items-center">
+                    <div class="lg:absolute left-0 top-[12%] mx-3 w-full sm:w-8/12 shadow-xl rounded-xl">
+                        <span class="block bg-gradient-to-b from-sky-500 to-sky-600 text-center py-2 rounded-tl-xl rounded-tr-xl">
+                            <p class="font-medium uppercase text-white">Đăng ký tư vấn miễn phí</p>
+                            <span class="text-xs text-white">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!</span>
+                        </span>
+                        <div class="bg-white pt-4 h-80 rounded-br-xl rounded-bl-xl">
+                            <input class="w-11/12 block mx-auto mb-3 bg-neutral-100 border-none rounded-md" type="text" placeholder="Họ và tên (*)">
+                            <input class="w-11/12 block mx-auto mb-3 bg-neutral-100 border-none rounded-md" type="number" placeholder="Số điện thoại (*)">
+                            <input class="w-11/12 block mx-auto mb-3 bg-neutral-100 border-none rounded-md" type="email" placeholder="E-mail">
+                            <input class="w-11/12 block mx-auto mb-3 bg-neutral-100 border-none rounded-md" type="text" placeholder="Nội dung...">
+
+                            <a class="uppercase mx-auto w-[80%] sm:w-48 shadow-lg shadow-orange-300 hover:opacity-90 bg-gradient-to-b mt-6 from-orange-300 to-orange-500 py-2 px-2.5 rounded-full text-white flex items-center justify-center" href="">
+                                <i class="ti-pencil-alt"></i>
+                                <span class="block ml-2">Đăng ký tư vấn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- part footer -->
+        <footer id="footer" class="py-8 bg-sky-500">         
+            <div class="max-w-screen-xl mx-3 sm:mx-10 lg:mx-auto">
+                <img class="w-full sm:w-[40%] lg:w-[16%]" src="img/logo-footer.png" alt="">
+                <div class=" sm:grid grid-rows-2 lg:grid-rows-1 grid-cols-2 lg:grid-cols-4 text-white">
+                    <div class="">
+                        <p class="uppercase mb-2">Bệnh viện đa khoa phương đông</p>
+                        <a href="" class="mb-1 text-xs block">Địa chỉ: Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</a>
+                        <a href="" class="mb-1 text-xs block">Email: bvphuongdong@phuongdonghospital.vn</a>
+                        <a href="" class="mb-1 text-xs block">Hotline: 1900 1806</a>
+                    </div>
+                    <div class="">
+                        <p class="text-sm font-medium">Thời gian mở cửa</p>
+                        <p class="mt-2">
+                            <span class="font-medium inline-block w-36">Thứ 2 - Chủ nhật:</span> 
+                            <span class="text-sm ml-3">07:30 -19:00</span>
+                            <span class="font-medium inline-block w-36">Cấp cứu 24/7: </span>
+                            <span class="text-sm ml-3">0833 015 115</span>
+                        </p>
+                    </div>
+                    <div class="">
+                        <p class="font-medium">Liên hệ</p>
+                        <p class="">
+                            <span class="font-medium inline-block w-40">Hotline Tiêm chủng:</span>
+                            <span class="ml-4">0911 615 115</span>
+                            <span class="font-medium inline-block w-40">Hotline Khoa sản: </span>
+                            <span class="ml-4">0911 615 115</span>
+                        </p>
+                    </div>
+                    <div class="">
+                        <p class="font-medium">Mạng xã hội</p>
+                        <span class="">
+                            <a class="hover:text-sky-600 inline-block mr-4" href="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="hover:text-sky-600 inline-block mr-4" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="hover:text-sky-600 inline-block mr-4" href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="hover:text-sky-600 inline-block mr-4" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
